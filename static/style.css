@@ -1,0 +1,90 @@
+/* body{
+    height:100vh;
+    margin:100px auto;
+    background-color:#2f2e41;
+}
+.title{
+    margin-left:8rem;
+    margin-bottom:4rem;
+} */
+
+/* Ensure full-screen height and prevent scrolling */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2e41;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: whitesmoke; /* Dark blue */
+    color: rgb(46, 91, 217);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.navabar-brand{
+    justify-items:center;
+    padding-bottom:2rem;
+    margin-left:30rem;
+}
+/* Center the login container and make it slightly smaller */
+.container {
+    width: 60rem;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the title positioning */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    background: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-top:2rem;
+}
+.btn:hover{
+    color:#1e3c72;
+    background-color: white;
+    border: 2px solid #1e3c72;
+    transition:0.3s;
+}
+.btn:active{
+    background-color:#1f56be;
+    color:whitesmoke;
+    border: 2px solid #1e54b8;
+
+}
+
+.alert-danger {
+    font-weight: bold;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    padding: 10px;
+}
