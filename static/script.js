@@ -9,3 +9,16 @@ function validateForm() {
 
     return true;
 }
+
+function showGlobalAlert(message, type) {
+    $('#globalAlert')
+        .stop(true, true)
+        .removeClass('alert-success alert-warning alert-danger text-success text-danger text-warning')
+        .addClass(`alert alert-${type} text-${type}`)
+        .text(message)
+        .fadeIn()
+        .delay(5000)
+        .fadeOut(function () {
+            $(this).removeClass('alert-success alert-warning alert-danger text-success text-danger text-warning'); // Remove all alert classes
+        });
+}
